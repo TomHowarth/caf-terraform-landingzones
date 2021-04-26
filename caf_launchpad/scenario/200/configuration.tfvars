@@ -5,21 +5,21 @@ landingzone = {
 }
 
 enable = {
-  bastion_hosts    = false
-  virtual_machines = false
+  bastion_hosts    = true
+  virtual_machines = true #false
 }
 
 # Default region. When not set to a resource it will use that value
 default_region = "region1"
 
 regions = {
-  region1 = "southeastasia"
-  region2 = "eastasia"
+  region1 = "ukwest"
+  region2 = "uksouth"
 }
 
 # core tags to be applied accross this landing zone
 tags = {
-  owner          = "CAF"
+  owner          = "CSI"
   deploymentType = "Terraform"
   costCenter     = "0"
   BusinessUnit   = "SHARED"
@@ -39,8 +39,8 @@ tags = {
 inherit_tags = true
 
 launchpad_key_names = {
-  azuread_app            = "caf_launchpad_level0"
-  keyvault_client_secret = "aadapp-caf-launchpad-level0"
+  azuread_app            = "csi_launchpad_level0"
+  keyvault_client_secret = "aadapp-csi-launchpad-level0"
   tfstates = [
     "level0",
     "level1",

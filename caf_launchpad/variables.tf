@@ -12,7 +12,7 @@ variable "tfstate_resource_group_name" {
   default = null
 }
 
-variable "tenant_id" {}
+#variable "tenant_id" {}
 variable "landingzone" {
   description = "The landing zone name is used to reference the tfstate in configuration files. Therefore while set it is recommended not to change"
 }
@@ -37,7 +37,7 @@ variable "regions" {
   type        = map(any)
   description = "List of the regions where services can be deployed. This impact the diagnostics logs settings"
   default = {
-    region1 = "southeastasia"
+    region1 = "ukwest"
   }
 }
 
@@ -209,3 +209,19 @@ variable "azurerm_routes" {
 variable "route_tables" {
   default = {}
 }
+variable "subscription_id" { 
+    type=string
+    default = "dec821b6-7693-4960-b8cb-bcb4eeab97a2"
+    }
+variable "client_id" {
+    type = string
+    default = "f9470310-0a9e-4a04-96e1-44d4d8c77cb7"
+    }
+variable "client_secret" {
+    type = string
+    default = "HptTXScP3zidFPogItSoR-EarMpUprlgQV"
+    }
+variable "tenant_id" {
+    type = string
+    default = "6202e6f2-01db-4d18-b3df-8ca648884c13"
+    }

@@ -13,12 +13,12 @@ dynamic_keyvault_secrets = {
     subscription_id = {
       output_key    = "client_config"
       attribute_key = "subscription_id"
-      secret_name   = "subscription-id"
+      secret_name   = "subscription_id"
     }
     tenant_id = {
       output_key    = "client_config"
       attribute_key = "tenant_id"
-      secret_name   = "tenant-id"
+      secret_name   = "tenant_id"
     }
     admin = {
       secret_name = "azdo-pat-admin"
