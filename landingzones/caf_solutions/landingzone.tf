@@ -1,7 +1,8 @@
 module "caf" {
-  source  = "aztfmod/caf/azurerm"
-  version = "~>5.3.0"
-  
+  # source  = "aztfmod/caf/azurerm"
+  # version = "~>5.3.0"
+  # source = "../../../aztfmod"
+  source = "git::https://github.com/aztfmod/terraform-azurerm-caf.git?ref=sqldb-msi-fix"
 
   azuread_api_permissions        = var.azuread_api_permissions
   azuread_apps                   = var.azuread_apps
